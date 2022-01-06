@@ -1,0 +1,24 @@
+{
+    "name": "makeitfly/cleantalk-symfony",
+    "description": "Cleantalk anti-spam integration for Symfony",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Gerarts",
+            "email": "mark.gerarts@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MakeItFly\\CleanTalkBundle\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "cleantalk/php-antispam": "^2.6"
+    },
+    "suggest": {
+        "symfony/property-access": "Required when not using callables to configure the CleanTalkType"
+    }
+}

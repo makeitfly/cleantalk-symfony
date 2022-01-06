@@ -1,0 +1,8 @@
+{% block cleantalk_js_on_widget %}
+    {%- set type = type|default('hidden') -%}
+    {{ block('form_widget_simple') }}
+
+    <script>
+        (document.getElementById("{{ id }}") || {}).value = true;
+    </script>
+{% endblock %}
