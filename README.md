@@ -58,7 +58,7 @@ All you need is the auth key, which you can find in your CleanTalk dashboard.
 # config/packages/makeitfly_cleantalk.yaml
 makeitfly_cleantalk:
     enabled: true
-    auth_key: '%env(MAKEITFLY_CLEANTALK_AUTH_KEY)'
+    auth_key: '%env(MAKEITFLY_CLEANTALK_AUTH_KEY)%'
 
     # Other optional config.
     server_url: "https://moderate.cleantalk.org/api2.0/" # CleanTalk API endpoint
